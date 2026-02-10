@@ -29,7 +29,7 @@ export const Navigation: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo - Script Style */}
-          <a href="#" className="logo-script text-3xl text-forest hover:text-forest-light transition-colors">
+          <a href="#" className="logo-script text-6xl text-forest hover:text-forest-light transition-colors leading-none py-2">
             Lerus
           </a>
 

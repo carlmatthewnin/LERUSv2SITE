@@ -22,8 +22,7 @@
 }
 
 .logo-script {
-  font-family: 'Playfair Display', serif;
-  font-style: italic;
+  font-family: 'Great Vibes', cursive;
   font-weight: 400;
 }
 
@@ -78,4 +77,23 @@
   transform: skew(5deg);
   --mark-color: 255 100 185;
   --mark-bg-angle: 150deg;
+}
+
+/* Hero image clip-path reveal animation on scroll */
+@keyframes heroImageReveal {
+  0% {
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+  }
+  50% {
+    clip-path: polygon(100% 0, 50% 0%, 50% 100%, 100% 100%);
+  }
+  100% {
+    clip-path: polygon(100% 0, 0% 0%, 0% 100%, 100% 100%);
+  }
+}
+
+.hero-image-animate {
+  animation: heroImageReveal ease-out forwards;
+  animation-timeline: view(block);
+  animation-range: entry 60% contain 30%;
 }

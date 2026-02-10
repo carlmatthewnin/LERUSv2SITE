@@ -1,5 +1,6 @@
 import React from 'react';
 import { MapPin, Phone, Clock, AlertCircle } from 'lucide-react';
+import { LocationMap } from './ui/expand-map';
 
 export const HowToGrab: React.FC = () => {
   return (
@@ -18,6 +19,15 @@ export const HowToGrab: React.FC = () => {
               We know Obrero is tight. Our location at the corner of 
               Lacson & Cervantes is built for the "Hazard Light Economy."
             </p>
+            
+            {/* Interactive Map Locator */}
+            <div className="py-4">
+              <LocationMap 
+                location="Lacson & Cervantes, Obrero" 
+                coordinates="7.0707° N, 125.6087° E" 
+              />
+            </div>
+            
             <div className="flex flex-col sm:flex-row gap-6 pt-4">
               <a 
                 href="https://maps.google.com/?q=Door+A,+Lim+Building,+Corner+Lacson+&+Cervantes+Street,+Barrio+Obrero,+Davao+City"
